@@ -1,0 +1,15 @@
+/* TODO: add styles for the form container */
+#form_container{
+  float: left;
+  border: 1px solid #CCCCCC;
+  margin-right: 40px;
+  padding: 12px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+/* TODO: add the styles for the table cells */
+.results{
+  border: 1px solid #CCCCCC;
+  padding: 12px;
+}

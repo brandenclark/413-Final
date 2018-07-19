@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #777788;
+}
+
+#finalbanner {
+    background-color: #222222;
+    color: #2da9a9;
+    padding: 12px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+main {
+    margin: 12px;
+}
+
+
+
+/* Just the easter egg - feel free to remove! */
+#picolas {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 0 15px #CCCCCC;
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+}

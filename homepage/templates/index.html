@@ -1,0 +1,50 @@
+<%inherit file="base.htm" />
+
+<%block name="content">
+    <h1>Search Crypto:</h1>
+
+    <div id="form_container">
+        ${ form }
+
+        <div class="text-center">
+            <button id="start_date_button" class="btn btn-default">Set Starting Date</button>
+            <button id="end_date_button" class="btn btn-default">Set Ending Date</button>
+        </div>
+    </div>
+    <div id="results_container">
+        ## TODO:
+        ## Add an html table with three columns
+        ## One row per CurrencyPrice object queried in index.py
+        <table>
+          <thead>
+            <tr>
+              <th class="results">
+                Symbol
+              </th>
+              <th class="results">
+                Date
+              </th>
+              <th class="results">
+                Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            %for row in prices:
+            <tr>
+              <td class="results">
+                ${ row.symbol }
+              </td>
+              <td class="results">
+                ${ row.date }
+              </td>
+              <td class="results">
+                ${ row.price }
+              </td>
+            </tr>
+            %endfor
+          </tbody>
+        </table>
+    </div>
+
+</%block>
